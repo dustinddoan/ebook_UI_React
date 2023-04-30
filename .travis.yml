@@ -7,5 +7,5 @@ script:
 
 deploy: &heroku
   provider: heroku
-  app: ebook-app
+  app: ebook-app-ui
   api_key: $HEROKU_AUTH_TOKEN
