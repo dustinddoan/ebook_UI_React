@@ -1,0 +1,11 @@
+language: node_js
+node_js:
+  - 18.14.12
+script:
+  - "npm run build"
+  - "npm run test:nowatch"
+
+deploy: &heroku
+  provider: heroku
+  app: ebook-app
+  api_key: $HEROKU_AUTH_TOKEN
